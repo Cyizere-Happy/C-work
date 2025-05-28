@@ -96,7 +96,6 @@ void listStudents(){
     FILE *file = fopen(FILENAME, "rb");
     student Student;
     int count = 0;
-
     if(file == NULL){
         printf("🚫 Error: Could not open file for reading.\n");
         return;
@@ -120,6 +119,14 @@ void listStudents(){
 	}
 	
 	fclose(file);
+}
+
+void updateStudent(){
+    int id;
+    printf("Enter student id:");
+    scanf("%d", &id);
+
+    
 }
 
 
